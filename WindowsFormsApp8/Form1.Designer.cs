@@ -66,7 +66,8 @@
             this.Find_Box.Name = "Find_Box";
             this.Find_Box.Size = new System.Drawing.Size(100, 20);
             this.Find_Box.TabIndex = 1;
-            this.Find_Box.Enter += new System.EventHandler(this.Find_Box_Enter);
+            this.Find_Box.MouseLeave += new System.EventHandler(this.Find_Box_MouseLeave);
+            this.Find_Box.MouseHover += new System.EventHandler(this.Find_Box_MouseHover);
             // 
             // Ok
             // 
@@ -160,7 +161,6 @@
             this.Kisi.TabStop = true;
             this.Kisi.Text = "Kisi";
             this.Kisi.UseVisualStyleBackColor = true;
-            this.Kisi.CheckedChanged += new System.EventHandler(this.Kisi_CheckedChanged);
             // 
             // Qadin
             // 
@@ -189,7 +189,8 @@
             this.Ad_Box.Name = "Ad_Box";
             this.Ad_Box.Size = new System.Drawing.Size(100, 20);
             this.Ad_Box.TabIndex = 14;
-            this.Ad_Box.TextChanged += new System.EventHandler(this.asd);
+            this.Ad_Box.MouseLeave += new System.EventHandler(this.Ad_Box_MouseLeave);
+            this.Ad_Box.MouseHover += new System.EventHandler(this.Ad_Box_MouseHover);
             // 
             // Soyad_Box
             // 
@@ -197,6 +198,8 @@
             this.Soyad_Box.Name = "Soyad_Box";
             this.Soyad_Box.Size = new System.Drawing.Size(100, 20);
             this.Soyad_Box.TabIndex = 14;
+            this.Soyad_Box.MouseLeave += new System.EventHandler(this.Soyad_Box_MouseLeave);
+            this.Soyad_Box.MouseHover += new System.EventHandler(this.Soyad_Box_MouseHover);
             // 
             // Ata_Box
             // 
@@ -204,6 +207,8 @@
             this.Ata_Box.Name = "Ata_Box";
             this.Ata_Box.Size = new System.Drawing.Size(100, 20);
             this.Ata_Box.TabIndex = 14;
+            this.Ata_Box.MouseLeave += new System.EventHandler(this.Ata_Box_MouseLeave);
+            this.Ata_Box.MouseHover += new System.EventHandler(this.Ata_Box_MouseHover);
             // 
             // Olke_Box
             // 
@@ -211,6 +216,8 @@
             this.Olke_Box.Name = "Olke_Box";
             this.Olke_Box.Size = new System.Drawing.Size(100, 20);
             this.Olke_Box.TabIndex = 14;
+            this.Olke_Box.MouseLeave += new System.EventHandler(this.Olke_Box_MouseLeave);
+            this.Olke_Box.MouseHover += new System.EventHandler(this.Olke_Box_MouseHover);
             // 
             // Seher_Box
             // 
@@ -218,6 +225,8 @@
             this.Seher_Box.Name = "Seher_Box";
             this.Seher_Box.Size = new System.Drawing.Size(100, 20);
             this.Seher_Box.TabIndex = 14;
+            this.Seher_Box.MouseLeave += new System.EventHandler(this.Seher_Box_MouseLeave);
+            this.Seher_Box.MouseHover += new System.EventHandler(this.Seher_Box_MouseHover);
             // 
             // Telefon_BOx
             // 
@@ -225,20 +234,23 @@
             this.Telefon_BOx.Name = "Telefon_BOx";
             this.Telefon_BOx.Size = new System.Drawing.Size(100, 20);
             this.Telefon_BOx.TabIndex = 14;
+            this.Telefon_BOx.MouseLeave += new System.EventHandler(this.Telefon_BOx_MouseLeave);
+            this.Telefon_BOx.MouseHover += new System.EventHandler(this.Telefon_BOx_MouseHover);
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.InactiveBorder;
+            this.dateTimePicker1.Checked = false;
             this.dateTimePicker1.Location = new System.Drawing.Point(408, 330);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 15;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(909, 450);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.Telefon_BOx);
             this.Controls.Add(this.Seher_Box);
@@ -260,6 +272,7 @@
             this.Controls.Add(this.Ok);
             this.Controls.Add(this.Find_Box);
             this.Controls.Add(this.Deserelize);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
