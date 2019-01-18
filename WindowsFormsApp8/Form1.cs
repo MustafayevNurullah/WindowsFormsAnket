@@ -86,6 +86,16 @@ namespace WindowsFormsApp8
             }
             else
             {
+             if (!a)
+                {
+                Telefon_Box.Text=string.Empty;
+                    Telefon_BOx.BackColor = Color.Red;
+                }
+                else
+                {
+                    Telefon_BOx.BackColor = Color.White;
+
+                }
                 if (Ad_Box.ForeColor == Color.Gray)
                 {
                     Ad_Box.BackColor = Color.Red;
@@ -127,15 +137,7 @@ namespace WindowsFormsApp8
                     Seher_Box.BackColor = Color.White;
 
                 }
-                if (!a)
-                {
-                    Telefon_BOx.BackColor = Color.Red;
-                }
-                else
-                {
-                    Telefon_BOx.BackColor = Color.White;
-
-                }
+               
                 if (!Kisi.Checked & !Qadin.Checked)
                 {
                     Kisi.BackColor = Color.Red;
